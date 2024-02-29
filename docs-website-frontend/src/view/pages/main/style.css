@@ -1,0 +1,49 @@
+.main-page-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.main-page-column-1 {
+    width: 30%;
+}
+
+.main-page-column-2 {
+    width: 70%;
+}
+
+.info-container {
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.other-image-container {
+    margin-top: 25px;
+}
+
+.main-page-image {
+    display: block;
+    max-width: 100%;
+}
+
+.main-page-other-image {
+    display: block;
+    max-width: 100%;
+}
+
+.main-page-other-image:hover {
+    max-width: 120%;
+    transition-duration: 0.2s;
+}
+
+.info-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.other-info-text {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
