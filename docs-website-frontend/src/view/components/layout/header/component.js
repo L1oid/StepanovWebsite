@@ -11,6 +11,7 @@ function HeaderComponent(props) {
                 <div className='header-container'>
                     <Link to={"/"} className='header-heading'>Колесников Алексей</Link>
                     <div className='menu-container'>
+                        <Link to={"/eggs"} className='menu-button'>Яйца</Link>
                         <Link to={"/tables"} className='menu-button'>Таблицы</Link>
                     </div>
                 </div>

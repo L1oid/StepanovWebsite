@@ -1,6 +1,7 @@
 .main-page-container {
     margin-top: 25px;
     margin-bottom: 25px;
+    height: 780px;
     display: flex;
 }
 
