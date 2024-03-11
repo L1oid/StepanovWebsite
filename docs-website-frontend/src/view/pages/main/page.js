@@ -1,8 +1,13 @@
-import React from 'react';
-
-import './style.css'
+import React, { useState } from 'react';
+import './style.css';
 
 function MainPage() {
+    const [isClicked, setIsClicked] = useState(false);
+
+    const handleClick = () => {
+        setIsClicked(!isClicked);
+    };
+
     return (
         <div className='page-container'>
             <div className="main-page-container">
@@ -14,9 +19,10 @@ function MainPage() {
                         />
                     </div>
                     <div className='other-image-container'>
-                        <img className="main-page-other-image"
+                        <img className={isClicked ? "main-page-other-image expanded" : "main-page-other-image"}
                              src="http://localhost:3000/photo1.jpg"
                              alt="me"
+                             onClick={handleClick}
                         />
                     </div>
                 </div>
@@ -35,7 +41,7 @@ function MainPage() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default MainPage;
