@@ -1,31 +1,30 @@
 .main-page-container {
     margin-top: 25px;
     margin-bottom: 25px;
-    height: 780px;
-    display: flex;
+    height: auto; /* Изменено на автоматическую высоту */
+    display: flex; /* Добавлено свойство flex */
+    flex-wrap: wrap; /* Добавлено свойство flex-wrap */
+    justify-content: space-around; /* Добавлено для центрирования элементов */
 }
 
-.main-page-column-1 {
-    width: 30%;
+/* CSS для изображений */
+.main-page-container img {
+    max-width: 300px; /* Примерное ограничение размера в 200px */
+    max-height: 300px; /* Примерное ограничение высоты в 200px */
+    margin: 10px; /* Добавлено для создания промежутков между изображениями */
+    transition: transform 0.3s ease; /* Плавный переход при изменении масштаба */
 }
 
-.main-page-column-2 {
-    width: 70%;
+/* Эффект увеличения при наведении */
+.main-page-container img:hover {
+    transform: scale(1.1); /* Увеличение масштаба на 10% */
 }
 
+/* Остальные стили остаются без изменений */
 .info-container {
     width: 100%;
     padding-right: 25px;
     padding-left: 25px;
-}
-
-.other-image-container {
-    margin-top: 25px;
-}
-
-.main-page-image {
-    display: block;
-    max-width: 100%;
 }
 
 .info-text {
@@ -37,25 +36,4 @@
     margin-top: 10px;
     font-size: 18px;
     font-weight: 600;
-}
-
-.main-page-other-image {
-    display: block;
-    max-width: 100%;
-    cursor: pointer;
-    transition-duration: 0.2s;
-}
-
-.main-page-other-image:hover {
-    max-width: 120%;
-    transition-duration: 0.2s;
-}
-
-.main-page-other-image.expanded {
-    max-width: 100vw;
-    max-height: 100vh;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
