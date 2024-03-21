@@ -11,3 +11,14 @@
     font-size: 18px;
     font-weight: 600;
 }
+
+.password-field {
+    display: flex;
+}
+
+.password-error {
+    padding-left: 20px;
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+}

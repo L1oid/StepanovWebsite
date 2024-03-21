@@ -11,10 +11,14 @@
 }
 
 .content-input {
-    width: 30%;
+    width: 390px;
     padding: 10px 5px;
     border: 2px solid #303030;
     border-radius: 4px;
     font-size: 16px;
     color: #303030;
+}
+
+.empty-input {
+    border-color: red;
 }
