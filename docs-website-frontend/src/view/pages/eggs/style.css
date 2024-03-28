@@ -4,6 +4,12 @@
     height: 780px;
 }
 
+.eggs-title {
+    margin-bottom: 45px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
 .eggs-button {
     margin-right: 10px;
     width: 100px;

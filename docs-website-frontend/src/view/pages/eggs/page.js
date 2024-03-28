@@ -41,6 +41,8 @@ function EggsPage() {
             setEmptyFieldError("Не все обязательные поля заполнены");
             console.error('Не все обязательные поля заполнены');
             return;
+        } else {
+            setEmptyFieldError("");
         }
 
         const invoiceWord = invoice ? "да" : "нет";
@@ -103,6 +105,7 @@ function EggsPage() {
     return (
         <div className='page-container'>
             <div className='eggs-page-container'>
+                <div className="eggs-title">ЗАО Птицефабрица №1</div>
                 <div className="password-field">
                     <EnabledInputComponent
                         title={'Фамилия'}
